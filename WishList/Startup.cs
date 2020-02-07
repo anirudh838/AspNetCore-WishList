@@ -28,9 +28,9 @@ namespace WishList
             }
             else 
             {
-                app.UseExceptionHandler("H");
+                app.UseExceptionHandler("/Home/Error");
             }
-            
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
