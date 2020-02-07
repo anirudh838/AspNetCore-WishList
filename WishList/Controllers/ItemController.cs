@@ -29,7 +29,7 @@ namespace WishList.Controllers
         {
             _context.Items.Add(item);
             _context.SaveChanges();
-            return RedirectToAction("Create");
+            return RedirectToAction("Index");
         }
         [HttpPost]
         public IActionResult Delete(int id)
